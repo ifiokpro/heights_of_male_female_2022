@@ -1,14 +1,11 @@
 -- Fetching all the data from the database
 select * from Heights..heights
 
--- The tallest male in the world in cm
-select max(male_height_cm) as "Tallest Male"
-from Heights..heights
+
 
 -- The average heights of male and female in Nigeria
 select * from Heights..heights
 where country_name = 'Nigeria'
 
--- Minimum Males height
-select (MIN(male_height_cm)) as MinimumMaleHeight 
-from Heights..heights
+-- Total number of records in the database
+select count(*) from Heights..heights
