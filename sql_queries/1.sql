@@ -8,3 +8,7 @@ from Heights..heights
 -- The average heights of male and female in Nigeria
 select * from Heights..heights
 where country_name = 'Nigeria'
+
+-- Minimum Males height
+select (MIN(male_height_cm)) as MinimumMaleHeight 
+from Heights..heights
